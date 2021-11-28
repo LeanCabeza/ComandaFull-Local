@@ -1,0 +1,1215 @@
+{
+	"info": {
+		"_postman_id": "e3e25322-2c46-4a7d-9d56-49fdc6f3fe05",
+		"name": "zPUNTOS DE ENTREGA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1-  MOZA TOMA PEDIDOS",
+			"item": [
+				{
+					"name": "MILANESA CABALLO",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc5NjUyNzksImV4cCI6MTAwNjM3OTY1Mjc5LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTMsXCJtYWlsXCI6XCJzb2Npb0Bzb2Npby5jb21cIixcInRpcG9cIjpcIlNPQ0lPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.XYOkjk7d-Nt_E0UIJhvRDmWJD_bKN48wDfqqByv6uzc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_mesa",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_cliente",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "id_producto",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "sector",
+									"value": "COCINA",
+									"type": "text"
+								},
+								{
+									"key": "minutosEspera",
+									"value": "30",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "EN PREPARACION",
+									"type": "text"
+								},
+								{
+									"key": "cantidad",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "foto",
+									"type": "file",
+									"src": "/C:/Users/leand/Desktop/Yo.JPG",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:666/comanda/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HAMBURGUESA DE GARBANZO",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc5NjUyNzksImV4cCI6MTAwNjM3OTY1Mjc5LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTMsXCJtYWlsXCI6XCJzb2Npb0Bzb2Npby5jb21cIixcInRpcG9cIjpcIlNPQ0lPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.XYOkjk7d-Nt_E0UIJhvRDmWJD_bKN48wDfqqByv6uzc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_mesa",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_cliente",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "id_producto",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "sector",
+									"value": "COCINA",
+									"type": "text"
+								},
+								{
+									"key": "minutosEspera",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "EN PREPARACION",
+									"type": "text"
+								},
+								{
+									"key": "cantidad",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "foto",
+									"type": "file",
+									"src": "/C:/Users/leand/Desktop/Yo.JPG",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:666/comanda/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CORONA",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc5NjUyNzksImV4cCI6MTAwNjM3OTY1Mjc5LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTMsXCJtYWlsXCI6XCJzb2Npb0Bzb2Npby5jb21cIixcInRpcG9cIjpcIlNPQ0lPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.XYOkjk7d-Nt_E0UIJhvRDmWJD_bKN48wDfqqByv6uzc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_mesa",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_cliente",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "id_producto",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "sector",
+									"value": "COCINA",
+									"type": "text"
+								},
+								{
+									"key": "minutosEspera",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "EN PREPARACION",
+									"type": "text"
+								},
+								{
+									"key": "cantidad",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "foto",
+									"type": "file",
+									"src": "/C:/Users/leand/Desktop/Yo.JPG",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:666/comanda/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DAIKIRI",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc5NjUyNzksImV4cCI6MTAwNjM3OTY1Mjc5LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTMsXCJtYWlsXCI6XCJzb2Npb0Bzb2Npby5jb21cIixcInRpcG9cIjpcIlNPQ0lPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.XYOkjk7d-Nt_E0UIJhvRDmWJD_bKN48wDfqqByv6uzc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_mesa",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_cliente",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "id_producto",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "sector",
+									"value": "COCINA",
+									"type": "text"
+								},
+								{
+									"key": "minutosEspera",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "EN PREPARACION",
+									"type": "text"
+								},
+								{
+									"key": "cantidad",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "foto",
+									"type": "file",
+									"src": "/C:/Users/leand/Desktop/Yo.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:666/comanda/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "2-Mozo saca foto y realciona al pedido",
+			"item": [
+				{
+					"name": "MOZO SACA FOTO",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc4OTYzNTksImV4cCI6MTAwNjM3ODk2MzU5LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTcsXCJtYWlsXCI6XCJiYXJ0ZW5kZXJAYmFydGVuZGVyLmNvbVwiLFwidGlwb1wiOlwiQkFSVEVOREVSXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.6zwhKXgmJhIvMvGQaS933tDkBiOLiAPCPDsXby7Dfxk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_cliente",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_pedido",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "foto",
+									"type": "file",
+									"src": "/C:/Users/leand/Desktop/Yo.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:666/comanda/pedidos/sacarFoto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"pedidos",
+								"sacarFoto"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "3 Y 6 CADA EMPLEADO PUEDE LISTAR Y CAMBIAR ESTADO",
+			"item": [
+				{
+					"name": "COCINA ASIGNA EL TIEMPO DE PREPARACION Y ACTUALIZA ESTADO",
+					"item": [
+						{
+							"name": "LISTAR SEGUN SECTOR.",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwNDE3NjYsImV4cCI6MTAwNjM4MDQxNzY2LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTUsXCJtYWlsXCI6XCJjb2NpbmVyb0Bjb2NpbmVyby5jb21cIixcInRpcG9cIjpcIkNPQ0lORVJPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.CzIfNaGaCCLgE6qHKc_xnl7VyUQTM3gVxh7sT2HnlGc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:666/comanda/pedidos/obtenerPorTipo/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "666",
+									"path": [
+										"comanda",
+										"pedidos",
+										"obtenerPorTipo",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EN PREPARACION",
+							"protocolProfileBehavior": {
+								"strictSSL": false
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwNDE3NjYsImV4cCI6MTAwNjM4MDQxNzY2LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTUsXCJtYWlsXCI6XCJjb2NpbmVyb0Bjb2NpbmVyby5jb21cIixcInRpcG9cIjpcIkNPQ0lORVJPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.CzIfNaGaCCLgE6qHKc_xnl7VyUQTM3gVxh7sT2HnlGc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idPedido",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "En Preparacion",
+											"type": "text"
+										},
+										{
+											"key": "tiempo",
+											"value": "30",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:666/comanda/pedidos/actualizarEstadoPedido/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "666",
+									"path": [
+										"comanda",
+										"pedidos",
+										"actualizarEstadoPedido",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LISTO PARA ENTREGAR",
+							"protocolProfileBehavior": {
+								"strictSSL": false
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwNDE3NjYsImV4cCI6MTAwNjM4MDQxNzY2LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTUsXCJtYWlsXCI6XCJjb2NpbmVyb0Bjb2NpbmVyby5jb21cIixcInRpcG9cIjpcIkNPQ0lORVJPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.CzIfNaGaCCLgE6qHKc_xnl7VyUQTM3gVxh7sT2HnlGc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idPedido",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "MODIFICADO POR bartender",
+											"type": "text"
+										},
+										{
+											"key": "tiempo",
+											"value": "15",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:666/comanda/pedidos/actualizarEstadoPedido/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "666",
+									"path": [
+										"comanda",
+										"pedidos",
+										"actualizarEstadoPedido",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "BARTENDER ASIGNA EL TIEMPO DE PREPARACION Y ACTUALIZA ESTADO Copy",
+					"item": [
+						{
+							"name": "LISTAR SEGUN SECTOR.",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwNDE4MDcsImV4cCI6MTAwNjM4MDQxODA3LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTcsXCJtYWlsXCI6XCJiYXJ0ZW5kZXJAYmFydGVuZGVyLmNvbVwiLFwidGlwb1wiOlwiQkFSVEVOREVSXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.KEKpYceGTMB6i4g5UoufCVe2p9q-UR-FGgMZBLCig8c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:666/comanda/pedidos/obtenerPorTipo/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "666",
+									"path": [
+										"comanda",
+										"pedidos",
+										"obtenerPorTipo",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EN PREPARACION",
+							"protocolProfileBehavior": {
+								"strictSSL": false
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwNDE4MDcsImV4cCI6MTAwNjM4MDQxODA3LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTcsXCJtYWlsXCI6XCJiYXJ0ZW5kZXJAYmFydGVuZGVyLmNvbVwiLFwidGlwb1wiOlwiQkFSVEVOREVSXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.KEKpYceGTMB6i4g5UoufCVe2p9q-UR-FGgMZBLCig8c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idPedido",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "En Preparacion",
+											"type": "text"
+										},
+										{
+											"key": "tiempo",
+											"value": "15",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:666/comanda/pedidos/actualizarEstadoPedido/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "666",
+									"path": [
+										"comanda",
+										"pedidos",
+										"actualizarEstadoPedido",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LISTO PARA ENTREGAR",
+							"protocolProfileBehavior": {
+								"strictSSL": false
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwNDE4MDcsImV4cCI6MTAwNjM4MDQxODA3LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTcsXCJtYWlsXCI6XCJiYXJ0ZW5kZXJAYmFydGVuZGVyLmNvbVwiLFwidGlwb1wiOlwiQkFSVEVOREVSXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.KEKpYceGTMB6i4g5UoufCVe2p9q-UR-FGgMZBLCig8c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idPedido",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "Listo Para Entregar",
+											"type": "text"
+										},
+										{
+											"key": "tiempo",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:666/comanda/pedidos/actualizarEstadoPedido/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "666",
+									"path": [
+										"comanda",
+										"pedidos",
+										"actualizarEstadoPedido",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CERVECERO ASIGNA EL TIEMPO DE PREPARACION Y ACTUALIZA ESTADO Copy 2",
+					"item": [
+						{
+							"name": "LISTAR SEGUN SECTOR.",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwNDE4MzgsImV4cCI6MTAwNjM4MDQxODM4LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTYsXCJtYWlsXCI6XCJjZXJ2ZWNlcm9AY2VydmVjZXJvLmNvbVwiLFwidGlwb1wiOlwiQ0VSVkVDRVJPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.8Vsx0RFPPvaEMWdX09NrtHNTUe6yLbZYKzy2MXjA6fc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:666/comanda/pedidos/obtenerPorTipo/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "666",
+									"path": [
+										"comanda",
+										"pedidos",
+										"obtenerPorTipo",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EN PREPARACION",
+							"protocolProfileBehavior": {
+								"strictSSL": false
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwNDE4MzgsImV4cCI6MTAwNjM4MDQxODM4LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTYsXCJtYWlsXCI6XCJjZXJ2ZWNlcm9AY2VydmVjZXJvLmNvbVwiLFwidGlwb1wiOlwiQ0VSVkVDRVJPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.8Vsx0RFPPvaEMWdX09NrtHNTUe6yLbZYKzy2MXjA6fc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idPedido",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "En Preparacion",
+											"type": "text"
+										},
+										{
+											"key": "tiempo",
+											"value": "15",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:666/comanda/pedidos/actualizarEstadoPedido/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "666",
+									"path": [
+										"comanda",
+										"pedidos",
+										"actualizarEstadoPedido",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LISTO PARA ENTREGAR",
+							"protocolProfileBehavior": {
+								"strictSSL": false
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwNDE4MzgsImV4cCI6MTAwNjM4MDQxODM4LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTYsXCJtYWlsXCI6XCJjZXJ2ZWNlcm9AY2VydmVjZXJvLmNvbVwiLFwidGlwb1wiOlwiQ0VSVkVDRVJPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.8Vsx0RFPPvaEMWdX09NrtHNTUe6yLbZYKzy2MXjA6fc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idPedido",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "Listo Para Entregar",
+											"type": "text"
+										},
+										{
+											"key": "tiempo",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:666/comanda/pedidos/actualizarEstadoPedido/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "666",
+									"path": [
+										"comanda",
+										"pedidos",
+										"actualizarEstadoPedido",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "4- Tiempo demora Pedido",
+			"item": [
+				{
+					"name": "TIEMPO DEMORA PEDIDOS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgxMjUwMjAsImV4cCI6MTAwNjM4MTI1MDIwLCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTgsXCJtYWlsXCI6XCJjbGllbnRlQGNsaWVudGUuY29tXCIsXCJ0aXBvXCI6XCJDTElFTlRFXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.sypyZqpL1LTKdj8PiukTPRYKFJL36o-GhMp4iF4uPog",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:666/comanda/pedidos/tiempoEsperaPedido/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"pedidos",
+								"tiempoEsperaPedido",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "5- SOCIO LISTA PEDIDOS",
+			"item": [
+				{
+					"name": "LISTAR PEDIDOS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgxMjc5ODQsImV4cCI6MTAwNjM4MTI3OTg0LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTMsXCJtYWlsXCI6XCJzb2Npb0Bzb2Npby5jb21cIixcInRpcG9cIjpcIlNPQ0lPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.6v0bRMMg2a_BGs2cM1W6AAvSTvyzsBrB9zdpHnP8Kcs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:666/comanda/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "7- MOZO VERIFICA PEDIDOS A ENTREGAR",
+			"item": [
+				{
+					"name": "PEDIDOS LISTOS PARA ENTREGAR",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc5NTMxNTgsImV4cCI6MTAwNjM3OTUzMTU4LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTQsXCJtYWlsXCI6XCJtb3pvQG1vem8uY29tXCIsXCJ0aXBvXCI6XCJNT1pPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.lR9ZkjG6fJcbFIiR2f_MM6fiLIi_IDBEfiTy67DvJyM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:666/comanda/pedidos/obtenerPorTipo/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"pedidos",
+								"obtenerPorTipo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CAMBIAR ESTADO MESA",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc5NTMxNTgsImV4cCI6MTAwNjM3OTUzMTU4LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTQsXCJtYWlsXCI6XCJtb3pvQG1vem8uY29tXCIsXCJ0aXBvXCI6XCJNT1pPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.lR9ZkjG6fJcbFIiR2f_MM6fiLIi_IDBEfiTy67DvJyM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:666/comanda/pedidos/obtenerPorTipo/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"pedidos",
+								"obtenerPorTipo",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "8-SOCIO PIDE LISTA MESAS Y SU ESTADO",
+			"item": [
+				{
+					"name": "LISTAR TODOS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc4MDUwMDAsImV4cCI6MTAwNjM3ODA1MDAwLCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTQsXCJtYWlsXCI6XCJtb3pvQG1vem8uY29tXCIsXCJ0aXBvXCI6XCJNT1pPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.f2csFF2vl6VgK66FQ1zXOBihb4SCc6QeiYOH-gPoWes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:666/comanda/mesas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"mesas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "9-MOZO COBRA CUENTA",
+			"item": [
+				{
+					"name": "COBRA POR LOS PEDIDOS",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc4OTYzNTksImV4cCI6MTAwNjM3ODk2MzU5LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTcsXCJtYWlsXCI6XCJiYXJ0ZW5kZXJAYmFydGVuZGVyLmNvbVwiLFwidGlwb1wiOlwiQkFSVEVOREVSXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.6zwhKXgmJhIvMvGQaS933tDkBiOLiAPCPDsXby7Dfxk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idPedido",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "COBRADO",
+									"type": "text"
+								},
+								{
+									"key": "tiempo",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:666/comanda/pedidos/actualizarEstadoPedido/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"pedidos",
+								"actualizarEstadoPedido",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "10-SOCIO DA DE BAJA MESA",
+			"item": [
+				{
+					"name": "BORRAR POR ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc4MDUwMDAsImV4cCI6MTAwNjM3ODA1MDAwLCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTQsXCJtYWlsXCI6XCJtb3pvQG1vem8uY29tXCIsXCJ0aXBvXCI6XCJNT1pPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.f2csFF2vl6VgK66FQ1zXOBihb4SCc6QeiYOH-gPoWes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:666/comanda/mesas/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"mesas",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "11- CLIENTE CARGA ENCUESTA",
+			"item": [
+				{
+					"name": "ALTA ENCUESTA",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc5NjM0MTAsImV4cCI6MTAwNjM3OTYzNDEwLCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTgsXCJtYWlsXCI6XCJjbGllbnRlQGNsaWVudGUuY29tXCIsXCJ0aXBvXCI6XCJDTElFTlRFXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.IlXYLso3qcdcugfBA4PRncNU6mB401kDE9ExIOphJUs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_mesa",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "mail_usuario",
+									"value": "cliente@cliente.com",
+									"type": "text"
+								},
+								{
+									"key": "valoracion_descripcion",
+									"value": "Todo Mas que bien",
+									"type": "text"
+								},
+								{
+									"key": "valoracion_mesa",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "valoracion_restaurante",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "valoracion_mozo",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "valoracion_cocinero",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "valoracion_cervecero",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "valoracion_bartender",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:666/comanda/encuenta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"encuenta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "12-MEJORES COMENTARIOS",
+			"item": [
+				{
+					"name": "MEJORES COMENTARIOS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc5NjUyNzksImV4cCI6MTAwNjM3OTY1Mjc5LCJhdWQiOiIwYzUxZDVmMzMxMmY4ZjEyZjk3OGFkODU3OGVmMDFhZGFjNDM3YmUxIiwiZGF0YSI6IntcIklkXCI6MTMsXCJtYWlsXCI6XCJzb2Npb0Bzb2Npby5jb21cIixcInRpcG9cIjpcIlNPQ0lPXCJ9IiwiYXBwIjoiTEEgQ09NQU5ESVRBIn0.XYOkjk7d-Nt_E0UIJhvRDmWJD_bKN48wDfqqByv6uzc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:666/comanda/socios/MejoresComentarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"comanda",
+								"socios",
+								"MejoresComentarios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
