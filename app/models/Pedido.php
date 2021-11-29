@@ -128,6 +128,21 @@ class Pedido
         return $consulta->execute(); 
     }
 
+    public static function actualizarEstadoPedidoPorId($idPedido,$estado,$tiempo)
+    {
+
+        $objAccesoDato = AccesoDatos::obtenerInstancia();
+        $consulta = $objAccesoDato->prepararConsulta("UPDATE pedidos 
+                                                        SET estado = :estado,
+                                                        minutosEspera = :tiempo 
+                                                        WHERE id = :id ");
+        $consulta->bindValue(':id', $idPedido, PDO::PARAM_INT);
+        $consulta->bindValue(':estado',$estado, PDO::PARAM_STR);
+        $consulta->bindValue(':tiempo',$tiempo, PDO::PARAM_STR);
+        
+        return $consulta->execute(); 
+    }
+
 
     public static function existeIdEnEseSector($idPedido,$sector)
     {

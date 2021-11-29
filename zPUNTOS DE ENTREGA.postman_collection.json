@@ -1210,6 +1210,42 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "LOGIN SOCIO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "clave",
+							"value": "1234",
+							"type": "text"
+						},
+						{
+							"key": "mail",
+							"value": "cliente@cliente.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/comanda/autenticacion/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"comanda",
+						"autenticacion",
+						"login"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

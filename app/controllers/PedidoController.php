@@ -210,7 +210,7 @@ class PedidoController extends Pedido implements IApiUsable
       $tiempo = $parametros['tiempo'];
 
       
-      if(Pedido::existeIdEnEseSector($idPedido,$tipo) != null){
+      if(Pedido::existeIdEnEseSector($idPedido,$tipo) != null || $tipo == "MOZO"){
 
           if($tipo == "CERVECERO"){
             
@@ -238,6 +238,11 @@ class PedidoController extends Pedido implements IApiUsable
 
           }else if ($tipo == "MOZO"){
 
+            if(Pedido::actualizarEstadoPedidoPorId($idPedido,$estado,$tiempo)){
+              $payload = json_encode(array("mensaje" => "PEDIDO ACTUALIZADO POR EL MOZO."));
+            }else{
+              $payload = json_encode(array("ERROR" => "Problemas con la actualizacion"));
+            }
           
 
           }else if ($tipo == "SOCIO"){
@@ -266,4 +271,3 @@ class PedidoController extends Pedido implements IApiUsable
 
 
 }
-
