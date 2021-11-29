@@ -1,98 +1,86 @@
-Aplicación Slim Framework 4 PHP con despliegue automático en Heroku.
-==============================
+DOCUMENTACIÓN LA COMANDA
 
-## Introducción
-El principal objetivo de este repo es poder desplegar de forma automática nuestra aplicación PHP Slim Framework 4 en Heroku.
+1ro – Login, que se encarga de validar un usuario en la BDD y darle un token correspondiente en caso de que corresponda.
 
-## 1- Forkear proyecto
-Como primer paso, forkeamos este proyecto desde el boton ubicado en la parte superior derecha de la pagina del repositorio.
+Tipos de usuarios
+    • Socio
+    • Bartender
+    • Cervecero
+    • Cocinero
+    • Mozo
+Socio
 
-## 2- Subimos nuestro código (opcional si agregan código)
-Una vez forkeado, clonamos el repo con `git clone <url del repo>` y agregamos nuestro codigo PHP (SLIM Framework) dentro de la carpeta `/app/`.
-Luego comiteamos y pusheamos los cambios.
+Puede hacer todo.
+Aclaración: Que pueda hacer todo, no quiere decir que tenga la obligación de hacerlo.
 
-```sh
-git add .
-git commit -m "first commit"
-git push -u origin main
-```
+Los socios le dan descansos, vacaciones, despiden empleados.
 
-## 3- Crear y configurar la App en Heroku
+    • ABM Mesas
+    • ABM Usuarios
+    • ABM Productos
+    • ABM Pedidos
 
-Nos dirigimos a la página de Heroku https://heroku.com/, iniciamos sesión si tenemos cuenta o creamos una.
+Mozo
 
-Heroku al iniciar sesión nos muestra su dashboard, aquí haremos clic en **New** y luego en **Create new app**:
+    • Listar los pedidos que ya estén listos para entregar en la mesa 
+        ◦ Pedidos→listarSegunSector ( Los que esten listos para entregar )
+    • Modificación Mesa.
+        ◦ Modificar Estado Mesa
+    • Modificación Pedidos.
+        ◦ Pedidos → ActualizarEstadoPedidoSegunSector
+      
+Bartender
 
-![Heroku1](https://i.ibb.co/MVTSH69/heroku1.png)
+    • Listar Pedidos que le correspondan, cambiarle el estado y cambiarle el tiempo de preparación.
+        ◦ Pedidos→listarSegunSector (Los que le correspondan al sector Bartender)
+    • Puede modificar el estado de los pedidos de su sector, cambiarle estado y seleccionar el tiempo que le va demorar.
+        ◦ Pedidos → ActualizarEstadoPedidoSegunSector
+          
+Cervecero
 
-En esta sección agregamos el nombre de la app, seleccionamos la región United States y luego clic en botón **Create app**
+    • Listar Pedidos que le correspondan, cambiarle el estado y cambiarle el tiempo de preparación.
+        ◦ Pedidos→listarSegunSector (Los que le correspondan al sector Cervecero)
+    • Puede modificar el estado de los pedidos de su sector, cambiarle estado y seleccionar el tiempo que le va demorar.
+        ◦ Pedidos → ActualizarEstadoPedidoSegunSector
+Cocinero
 
-![Heroku2](https://i.ibb.co/TwPJnrW/heroku2.png)
+    • Listar Pedidos que le correspondan, cambiarle el estado y cambiarle el tiempo de preparación.
+        ◦ Pedidos→listarSegunSector (Los que le correspondan al sector Cocinero)
+    • Puede modificar el estado de los pedidos de su sector, cambiarle estado y seleccionar el tiempo que le va demorar.
+        ◦ Pedidos → ActualizarEstadoPedidoSegunSector
+      
+Circuito del Pedido.
 
-Ahora vamos a la sección **Deploy** y hacemos clic en la opción de GitHub, la cual nos mostrará nuestro usuario o tendremos que iniciar sesión con GitHub. Después   buscamos el nombre de nuestro repo y aparecerá abajo:
+    1.  Primero el mozo se encargara de presentarse y ofrecer las mesas disponibles
+       
+    2. . El Mozo agenda cliente en BBDD.
+       
+    3.  Mozo,  asignara entrega la cartilla.
+       
+    4. Luego de un rato, el Mozo se acercara  a tomar el pedido y agendara el producto de la cartilla. 
+       Cambien se encargara de derivar los pedidos a cada sector correspondiente. 
+       Y luego le actualizara el estado de la mesa a “Esperando”.
 
-![Heroku3](https://i.ibb.co/vZjZgD6/heroku3.png)
+    5. Cada sector se encargara de listar los pedidos correspondientes y solo verán los correspondientes a su sector. 
+       Una vez que tengan un pedido que les corresponda, se encargaran de actualizare el tiempo de espera y el estado lo podrán como “En preparacion”. 
+       Una vez que terminen, le agendaran el estado “Listo”.
+       
+    6. El Mozo puede listar todos los pedidos y si hay alguno con el estado “Listo”, lo ira a buscar al sector correspondiente y lo entregara a la mesa. Una vez que lo entrega todos los pedidos a la mesa, le cambiara el estado a “Comiendo”.
+       
+    7. Una vez que terminan de comer, el Mozo pasa a cobrar la cuenta y actualiza el estado a “Abonado”
+       
+    8. Luego Limpiara la mesa y la podrá en estado “Disponible”, para que se siente otro comensal.
+       
+       Encuesta
+    • Al terminar de comer el cliente puede hacer la encuesta, o no …
+    • En la encuesta se valorara cada servicio recibido con un puntaje del 1 al 10 y puede añadir una descripción de hasta 67 caracteres.
+    • A las encuestas solo accede el cliente y el SOCIO.
+    • Las encuestan se  pueden guardar en PDF/CSV. 
+    • Tambien se puede cargar desde un CSV encuesta a la base de datos.
 
-Seleccionamos el repo y hacemos clic en **Connect**
 
-Una vez hecho esto, elegimos la rama de github que queremos deplegar con nuestra aplicación Heroku, en nuestro caso `main`, y hacemos clic en **Enable Automatic Deploys**. De esta forma, cada vez que se haga una modificación a esta rama, Heroku va actualizar automáticamente la aplicación.
 
-![Heroku4](https://i.ibb.co/d0z1NWv/heroku4.png)
 
-Lo utlimo que deberiamos hacer es clic en el botón **Deploy Branch**. Esto solo se hace una sola vez, luego se hará de forma automática.
 
-![Heroku5](https://i.ibb.co/sVYwVZx/heroku5.png)
 
-Podemos verificar desde GitHub si el depliegue se hizo con exito. 
 
-https://github.com/flippiJS/slim-php-heroku/deployments
-
-![Heroku6](https://i.ibb.co/K95j3fp/heroku6.png)
-
-Desde el botón **View deployment** accedemos a la URL de la app desplegada.
-
-https://slim-php-heroku.herokuapp.com/
-
-## Requisitos para correr localmente
-
-- Instalar PHP o XAMPP (https://www.php.net/downloads.php o https://www.apachefriends.org/es/download.html)
-- Instalar Composer desde https://getcomposer.org/download/ o por medio de CLI:
-
-```sh
-php -r "copy('//getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('SHA384', 'composer-setup.php') === 'e115a8dc7871f15d853148a7fbac7da27d6c0030b848d9b3dc09e2a0388afed865e6a3d6b3c0fad45c48e2b5fc1196ae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-```
-
-## Correr localmente via XAMPP
-
-- Copiar proyecto dentro de la carpeta htdocs
-
-```sh
-C:\xampp\htdocs\
-```
-- Acceder por linea de comandos a la carpeta del proyecto y luego instalar Slim framework via Compose
-
-```sh
-cd C:\xampp\htdocs\
-composer update
-```
-
-- Abrir desde http://localhost:8080/
-
-## Correr localmente via PHP
-
-- Acceder por linea de comandos a la carpeta del proyecto y luego instalar Slim framework via Compose
-
-```sh
-cd C:\<ruta-del-repo-clonado>
-composer update
-php -S localhost:666 -t app
-```
-
-- Abrir desde http://localhost:666/
-
-## Ayuda
-Cualquier duda o consulta por el canal de slack
-
-### 2021 - UTN FRA
